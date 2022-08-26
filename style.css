@@ -1,0 +1,686 @@
+/* FONT-SIZE (px)
+8/ 10/ 12/ 14/ 16/ 18/ 20/ 22/ 24/ 26/ 30/
+32/ 36/ 40/ 46/ 52/ 60/ 68/ 72/ 76
+*/
+
+/* SPACING (px)
+6/ 8/ 10/ 12/ 14/ 16/ 18/ 22/ 26/ 30/ 32/ 36/ 40/ 44/
+48/ 54/ 60/ 64/ 70/ 76/ 80 
+ */
+
+/* COLOR
+primary: 
+tint: 
+color-font: #b3b3b3
+*/
+
+/* ********************************* */
+/* GENERAL */
+/* ********************************* */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  position: relative;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 5.2rem;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 4.6rem;
+}
+
+h3 {
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn {
+  /* font-size: 2rem; */
+  padding: 1rem 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.section-container {
+  padding: 9rem 3.2rem;
+}
+
+.section-heading {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  margin-bottom: 3.2rem;
+}
+
+.icon {
+  font-size: 2.6rem;
+}
+
+.active-block {
+  display: block;
+}
+
+/* ********************************* */
+/* -------- HEADER ------------*/
+/* ********************************* */
+.main-header {
+  background-color: black;
+}
+
+.sticky-header {
+  position: fixed;
+  z-index: 100;
+}
+
+.main-header-top__nav-icon {
+  display: none;
+}
+
+.main-header-top {
+  padding: 1rem 3.2rem;
+  align-items: center;
+}
+
+.main-header-top__brand {
+  justify-self: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 8rem;
+}
+
+.brand-name {
+  width: 12rem;
+}
+
+.main-header-top__search-box {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  background-color: #272727;
+  padding: 1rem 1.6rem;
+}
+
+#search-box-input {
+  border: none;
+  background-color: #272727;
+  padding-right: 1rem;
+  caret-color: #fff;
+}
+#search-box-input:focus {
+  outline: none;
+}
+
+.search-box-icon ion-icon {
+  font-size: 1.6rem;
+  color: #e6e6e6;
+  padding-left: 1rem;
+  border-left: 1px solid #4d4d4d;
+}
+
+#search-box-input[type="text"] {
+  font-size: 1.4rem;
+  color: #fff;
+}
+#search-box-input::placeholder {
+  color: #b3b3b3;
+}
+
+.main-header-nav {
+  border-top: 1px solid #4d4d4d;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 2.2rem 0;
+}
+
+.nav-list__link + .nav-list__link {
+  padding-left: 3.2rem;
+}
+
+.nav-list__link:first-child a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-list__link a:link,
+.nav-list__link a:visited {
+  color: #b3b3b3;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.nav-list__link a:hover,
+.nav-list__link a:active {
+  color: #fff;
+}
+
+.models-icon {
+  font-size: 2rem;
+}
+
+/* ********************************* */
+/* -------- HERO-SECTION ------------*/
+/* ********************************* */
+.hero-section {
+  color: #fff;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
+    url("imgs/maybach-stage-hero-banner.jpg");
+  background-size: cover;
+  background-position: 10% 75%;
+  background-repeat: no-repeat;
+  height: 65rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-box__heading {
+  font-family: "Old Standard TT", serif;
+  color: #e6e6e6;
+  margin-bottom: 3rem;
+}
+
+.hero-box__description {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #b3b3b3;
+  margin-bottom: 9rem;
+}
+
+.hero-box__button {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #b3b3b3;
+  cursor: pointer;
+}
+
+.hero-box__button:hover {
+  background-color: #4d4d4d;
+  transition: all 0.5s;
+}
+
+.hero-box__button a {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #e6e6e6;
+}
+
+/* ********************************* */
+/* -------- MODEL-SECTION ------------*/
+/* ********************************* */
+.model-heading {
+  color: #4d4d4d;
+}
+
+.model-box {
+  display: flex;
+  align-items: stretch;
+  box-shadow: 1px 1px 4px #b3b3b3;
+  width: fit-content;
+  margin-bottom: 1.2rem;
+}
+
+.model-box-2 {
+  display: none;
+}
+
+.model-box .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #b3b3b3;
+  cursor: pointer;
+}
+
+.model-box .btn:not(:last-child) {
+  border-right: none;
+}
+
+.model-box .btn:hover {
+  background-color: #e6e6e6;
+  transition: all 0.5s;
+}
+
+.model-box__all-models {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.model-box__new-models {
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.logo-mercedes-eq {
+  width: 14rem;
+}
+
+.logo-amg,
+.logo-maybach {
+  width: 10rem;
+}
+
+.new-models--star {
+  width: 1rem;
+  transform: translate(2px, -10px);
+}
+
+.btn.btn-active:hover,
+.btn.btn-active {
+  background-color: #000;
+  color: #fff;
+  fill: #fff;
+}
+
+.model-main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.model-main-type {
+  padding: 2.2rem;
+}
+
+.model-main-type::-webkit-scrollbar {
+  width: 0;
+}
+
+.type-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.bodytype {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+
+.bodytype ion-icon {
+  display: none;
+}
+
+.type-list__type {
+  color: #909090;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: fit-content;
+  transition: all 0.4s ease-in-out;
+}
+
+.type-list__type:hover {
+  fill: #4dabf7;
+  color: #4dabf7;
+}
+
+.type-list__type--active {
+  color: #000;
+  transform: scale(1.1);
+  font-weight: 600;
+}
+
+.car-type {
+  width: 4rem;
+}
+
+.type-list__type span {
+  font-size: 1.8rem;
+}
+
+.type-list__see-all {
+  font-size: 1.8rem;
+  color: #909090;
+  padding: 1rem 0;
+  border-top: 1px solid #b3b3b3;
+  width: fit-content;
+}
+
+.car-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  border-left: 1px solid #e6e6e6;
+  padding: 0 3.2rem;
+  margin-top: 2.2rem;
+}
+
+.car {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+  transition: all 0.4s;
+  position: relative;
+}
+
+.car:hover {
+  background-color: #f6f6f6;
+}
+
+.car__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 0.6rem;
+}
+
+.car__price {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #b3b3b3;
+  margin-bottom: 1.8rem;
+}
+
+.car__img {
+  width: 100%;
+}
+
+.car__add-cart-icon {
+  display: none;
+}
+
+.car__other-features {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  min-height: 2rem;
+}
+
+.other-features--new,
+.other-features--electric {
+  font-size: 1.4rem;
+  border-radius: 30px;
+  padding: 0.4rem 1rem;
+}
+
+.other-features--new {
+  background-color: #4dabf7;
+  color: #fff;
+}
+
+.other-features--electric {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+/* ********************************* */
+/* RECOMMENDATIONS-SECTION */
+/* ********************************* */
+
+#recommendations-section {
+  background-color: #000;
+}
+
+.recommendations-heading {
+  color: #e6e6e6;
+}
+
+.carousel {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.carousel-round-btn {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  font-size: 5rem;
+}
+
+.carousel-round-btn.left {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-round-btn.right {
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.carousel-list {
+  display: flex;
+  overflow: scroll;
+}
+
+.carousel-list::-webkit-scrollbar {
+  width: 0;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: calc(100% / 3);
+  padding: 0 2rem;
+}
+
+.carousel-item-img {
+  width: 100%;
+}
+
+.carousel-item-about {
+  background: #fff;
+  color: #000;
+  padding: 2rem;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carousel-detail {
+  margin-bottom: 4.8rem;
+}
+
+.carousel-detail__title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.carousel-detail__description {
+  font-size: 1.6rem;
+}
+
+.carousel-btn {
+  color: #fff;
+  background-color: #4dabf7;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: none;
+}
+
+/* ********************************* */
+/* CUSTOMER-SERVICES SECTION */
+/* ********************************* */
+
+.services-list {
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2.2rem;
+}
+
+.service {
+  background-color: #fff;
+  padding: 1.6rem 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid #808080;
+  cursor: pointer;
+}
+
+.service:hover {
+  background-color: #f6f6f6;
+}
+
+.service-detail {
+  padding-left: 1.8rem;
+  border-left: 1px solid #b3b3b3;
+  flex-grow: 2;
+}
+
+.service-detail__title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+
+.service-detail__description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #808080;
+}
+
+/* ********************************* */
+/* FOOTER */
+/* ********************************* */
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-main {
+  grid-template-columns: repeat(4, 1fr);
+  padding: 4rem 0;
+  border-bottom: 1px solid #b3b3b3;
+}
+
+.footer-list-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  padding-bottom: 2.6rem;
+}
+
+.footer-list__item a {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #b3b3b3;
+  margin-bottom: 1.6rem;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.footer-list__item a::after {
+  content: "";
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  transition: all 0.5s;
+}
+
+.footer-list__item a:hover {
+  color: #fff;
+}
+
+.footer-list__item a:hover::after {
+  right: 0;
+}
+
+.footer-other {
+  grid-template-columns: 3fr 2fr;
+  padding: 2.2rem 0 0;
+  margin-bottom: -4rem;
+}
+
+.other-list {
+  display: flex;
+  align-items: center;
+  gap: 2.6rem;
+}
+
+.other-list__item a {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #b3b3b3;
+}
+
+.social-media {
+  justify-self: end;
+}
+
+.chat-icon {
+  background-color: #4d4d4d;
+  padding: 1.4rem;
+  border-radius: 50%;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transform: translate(-30%, -55%);
+}

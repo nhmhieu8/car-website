@@ -1,0 +1,457 @@
+/* *************************** */
+/* BELOW 1520px */
+/* *************************** */
+@media (max-width: 95em) {
+  /* ----- SERVICES-SECTION ----- */
+  .services-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+/* *************************** */
+/* BELOW 1312px */
+/* *************************** */
+@media (max-width: 82em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* *************************** */
+/* BELOW 1008px */
+/* *************************** */
+@media (max-width: 63em) {
+  html {
+    font-size: 50%;
+  }
+
+  /* ----- MODEL-SECTION ----- */
+  .model-main {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .car-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ----- RECOMMENDATIONS-SECTION ----- */
+  .carousel-item {
+    padding: 0 1rem;
+  }
+
+  /* ----- FOOTER ----- */
+  .footer-main {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-list-container {
+    border-bottom: 1px solid #909090;
+  }
+
+  .footer-list-heading {
+    padding: 2.2rem 1.4rem 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-list-heading p {
+    font-weight: 500;
+  }
+
+  .footer-list-heading .icon {
+    display: block;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .footer-list-heading .icon--active {
+    transform: rotate(-180deg);
+  }
+
+  .footer-list {
+    transition: all 0.4s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-list__item {
+    display: inline-block;
+    width: fit-content;
+  }
+
+  .footer-list__item a {
+    margin-bottom: 3rem;
+  }
+}
+
+/* *************************** */
+/* BELOW 736px */
+/* *************************** */
+@media (max-width: 46em) {
+  .section-container {
+    padding: 9rem 1.2rem;
+  }
+
+  /* ----- HEADER ----- */
+  .main-header-top {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main-header-top__brand {
+    justify-self: center;
+  }
+
+  .brand-name {
+    display: none;
+  }
+
+  .main-header-top__nav-icon {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-icon {
+    visibility: hidden;
+    font-size: 4.6rem;
+    font-weight: 600;
+    color: #b3b3b3;
+    z-index: 100;
+  }
+
+  .nav-icon--active {
+    visibility: visible;
+  }
+
+  .nav-icon--close {
+    color: #000;
+    transform: translateX(-100%);
+  }
+
+  .main-header-top__search-box {
+    background: none;
+    padding: 0;
+  }
+
+  #search-box-input {
+    display: none;
+  }
+
+  .search-box-icon ion-icon {
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 0;
+    border: none;
+  }
+
+  .main-header-nav {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.96);
+    transform: translateX(-100%);
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    z-index: 90;
+  }
+
+  .main-header-nav--active {
+    transform: translateX(0);
+    height: 100vh;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-list__link + .nav-list__link {
+    padding: 0;
+  }
+
+  .nav-list__link a:link,
+  .nav-list__link a:visited {
+    font-size: 3rem;
+    color: #000;
+    font-weight: 600;
+  }
+
+  .nav-list__link a:hover,
+  .nav-list__link a:active {
+    color: #909090;
+  }
+
+  .models-icon {
+    display: none;
+  }
+
+  /* ----- HERO-SECTION ----- */
+  .hero-section {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.9)
+      ),
+      url(imgs/maybach-stage-hero-banner.jpg);
+    background-color: #000;
+    background-size: 110%;
+    background-position: bottom 27rem right 0rem;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+  }
+
+  .hero-box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-box {
+    align-items: center;
+    padding-bottom: 4.8rem;
+  }
+
+  .hero-box__heading {
+    text-align: center;
+  }
+
+  .hero-box__description {
+    margin-bottom: 4rem;
+  }
+
+  /* ----- MODEL-SECTION ----- */
+  .model-box {
+    display: none;
+  }
+
+  .model-box-2 {
+    display: block;
+  }
+
+  .model-box-option {
+    padding: 1.4rem 2rem;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .model-box-option .model-box-heading {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .icon-model-option {
+    transition: all 0.4s ease-in-out;
+  }
+
+  .icon-model-option--active {
+    transform: rotate(-180deg);
+  }
+
+  .option-list {
+    transition: max-height 0.4s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .option-list__item {
+    font-size: 2rem;
+    padding: 1.2rem 2rem;
+    border-bottom: 1px solid #909090;
+  }
+
+  .model-main {
+    display: block;
+  }
+
+  .model-main-type {
+    padding: 1.8rem 2rem;
+    border-bottom: 1px solid #909090;
+  }
+
+  .type-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .type-list li {
+    white-space: nowrap;
+  }
+
+  .type-list__type svg,
+  .bodytype,
+  .type-list .type-list__see-all {
+    display: none;
+  }
+
+  .car-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    border: 0;
+    gap: 1.4rem;
+    margin-top: 1.4rem;
+  }
+
+  .car {
+    align-items: flex-start;
+    padding: 3rem;
+    background-color: #f6f6f6;
+  }
+
+  .car__add-cart-icon {
+    display: inline-block;
+    color: #000;
+    font-size: 2.2rem;
+    padding: 0.5rem;
+    border-radius: 40px;
+    background: #fff;
+    box-shadow: 0px 1px 3px #000;
+    position: absolute;
+    bottom: 1.4rem;
+    right: 1.4rem;
+  }
+
+  .car__title {
+    font-size: 2.4rem;
+  }
+
+  .car__price {
+    font-size: 1.6rem;
+  }
+
+  .car__other-features {
+    font-size: 1.4rem;
+  }
+
+  /* ----- SERVICES-SECTION ----- */
+  .services-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  /* ----- RECOMMENDATIONS ----- */
+  .carousel-item {
+    width: 50%;
+  }
+
+  /* ----- FOOTER ----- */
+  .footer-other {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 3.2rem 0;
+  }
+
+  .social-media {
+    margin-bottom: 1.6rem;
+    grid-row: 1/2;
+    justify-self: start;
+  }
+
+  /* CHAT-ICON */
+  .chat-icon {
+    padding: 1.4rem;
+  }
+
+  .chat-icon .icon {
+    font-size: 4rem;
+  }
+}
+
+/* *************************** */
+/* BELOW 592px  37em*/
+/* BELOW 432px  37em*/
+
+/* *************************** */
+@media (max-width: 27em) {
+  .section-container {
+    padding: 7rem 0;
+  }
+
+  /* ----- HEADER ----- */
+  .logo {
+    width: 6rem;
+  }
+
+  /* ----- HERO-SECTION ----- */
+  .hero-box__button {
+    align-self: stretch;
+  }
+
+  .hero-box__heading {
+    font-size: 4.6rem;
+  }
+  /* ----- MODEL-SECTION ----- */
+  .car-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* ----- RECOMMENDATIONS-SECTION ----- */
+  .carousel {
+    padding: 0 3.6rem;
+  }
+
+  .carousel-round-btn.left {
+    transform: translate(-20%, -50%);
+  }
+
+  .carousel-round-btn.right {
+    transform: translate(20%, -50%);
+  }
+
+  .carousel-item {
+    width: 100%;
+  }
+
+  /* ----- SERVICE-SECTION ----- */
+  .service {
+    padding: 2rem;
+  }
+
+  .service ion-icon {
+    font-size: 2.6rem;
+  }
+
+  .service-detail__title {
+    font-size: 2rem;
+  }
+
+  .service-detail__description {
+    font-size: 1.8rem;
+  }
+
+  /* ----- FOOTER ----- */
+  .social-media {
+    margin-bottom: 3rem;
+  }
+
+  .other-list__item ion-icon {
+    font-size: 3.2rem;
+  }
+
+  .other-list:first-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
+  }
+
+  .footer-list-heading {
+    font-size: 2rem;
+  }
+
+  .footer-list__item a,
+  .other-list__item a {
+    font-size: 1.8rem;
+  }
+
+  .footer-list-heading .icon {
+    font-size: 2.6rem;
+  }
+}
